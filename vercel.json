@@ -1,0 +1,31 @@
+{
+  "version": 2,
+
+  "routes": [
+    {
+      "src": "/api/save-game-data",  
+      "dest": "/api/save-game-data.js"
+    },
+    {
+      "src": "/api/get-game-data", 
+      "dest": "/api/get-game-data.js"
+    },
+    {
+      "src": "/api/update-game-data", 
+      "dest": "/api/update-game-data.js"
+    },
+    {
+      "src": "/api/delete-game-data", 
+      "dest": "/api/delete-game-data.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/templates/$1"  
+    }
+  ],
+  "functions": {
+    "api/**.js": {
+      "maxDuration": 60
+    }
+  }
+}

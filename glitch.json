@@ -1,0 +1,16 @@
+{
+    "install": "npm install",
+    "start": "npm start",
+    "watch": {
+      "ignore": [
+        "\\.pyc$"
+      ]
+    },
+    "restart": {
+      "include": [
+        "\\.js$"
+      ]
+    },
+    "throttle": 1000
+  }
+  
